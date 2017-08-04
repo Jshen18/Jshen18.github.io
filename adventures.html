@@ -1,0 +1,14 @@
+---
+layout: default
+title: Adventures
+---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  {% for adventure in site.adventures %}
+    <div class="adventure">
+      <h2><a href="{{ adventure.url }}">{{ adventure.title }}</a></h2>
+    </div>
+  {% endfor %}
+</div>
