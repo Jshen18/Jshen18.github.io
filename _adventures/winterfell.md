@@ -1,16 +1,8 @@
 ---
-title: "Alamere Falls"
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+title: "The Home of House Stark, Winterfell"
+excerpt: "Winter is coming."
 header:
-  image: https://pixabay.com/get/eb37b20d2af0073ed1534705fb0938c9bd22ffd41cb1104994f8c47baf/mt-fuji-2232246_1920.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
-sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+  image: https://winteriscoming.net/wp-content/blogs.dir/385/files/2015/11/WF.jpg
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: http://bit.ly/2wr0xQm

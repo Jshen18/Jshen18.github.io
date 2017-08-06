@@ -2,11 +2,23 @@
 layout: default
 author_profile: false
 ---
-
-<div class="main map">
-  <section>
-    <div class="avatar">
-      <img src='/assets/images/us.jpg'>
+<div>
+  <section class="collection__wrapper">
+  {% for adventure in site.adventures %}
+    <div class="collection-item">
+      <a href="{{ adventure.url }}">
+        <img class="collection-item__teaser" src="{{ adventure.header.image }}"/>
+      </a>
+      {% if adventure.last_modified_at %}
+        <p class="collection-item__date"><time datetime="{{ adventure.last_modified_at | date: "%Y-%m-%d" }}">{{ adventure.last_modified_at | date: "%B %d, %Y" }}</time></p>
+      {% elsif adventure.date %}
+        <p class="collection-item__date"><time datetime="{{ adventure.date | date_to_xmlschema }}">{{ adventure.date | date: "%B %d, %Y" }}</time></p>
+      {% endif %}
+      <div class="collection-item__title-wrapper">
+        <h2 class="collection-item__title">{{ adventure.title }}</h2>
+      </div>
+      <p class="collection-item__excerpt">{{ adventure.excerpt }}</p>
     </div>
+  {% endfor %}
   </section>
 </div>

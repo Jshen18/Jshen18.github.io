@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "I Think It's This Way..."
+title                    : "\"I Think It's This Way...\""
 title_separator          : "-"
 name                     : "Brannifer Sheng"
 description              : "There and back again... A tale of two snails pitted against the world."
@@ -244,13 +244,12 @@ defaults:
       path: ""
       type: adventures 
     values:
-      layout: single
+      layout: adventure
       author_profile: false
-      share: true
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: post
     values:
       layout: single
       author_profile: true

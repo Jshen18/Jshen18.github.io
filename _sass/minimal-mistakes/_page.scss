@@ -168,7 +168,8 @@
 
 .page__hero-image {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  object-fit: cover;
   -ms-interpolation-mode: bicubic;
 }
 
