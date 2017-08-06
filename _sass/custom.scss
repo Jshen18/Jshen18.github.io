@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+}
+
+.map {
+  background-image: url(../images/world-map.png);
+  background-repeat: no-repeat;
+  background-position: 75%;
+  background-size: contain;
+  height: 560px;
+  margin: 20px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f3f3;
+  border-radius: 50%;
+  overflow: hidden;
+
+  > img {
+    max-width: 230px;
+    height: 200px;
+    margin: 2px;
+    border-radius: 50%;
+  }
+}
